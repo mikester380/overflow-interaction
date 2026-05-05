@@ -1,0 +1,5 @@
+@use "mix/layout.scss" as *;
+
+.app {
+  @include cwf("x");
+}
