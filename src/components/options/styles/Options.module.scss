@@ -1,0 +1,14 @@
+.options {
+  background-color: $bg;
+  border-radius: 9999px;
+  width: max-content;
+  padding: 8px;
+  display: flex;
+  gap: 8px;
+
+  .toggleIcon {
+    display: block;
+    width: 20px;
+    height: 20px;
+  }
+}

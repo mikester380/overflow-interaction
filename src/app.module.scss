@@ -1,5 +1,5 @@
-@use "mix/layout.scss" as *;
-
 .app {
-  @include cwf("x");
+  height: 100dvh;
+  @include cwf("xy");
+  overflow: hidden;
 }

@@ -17,7 +17,14 @@ export default defineConfig({
     preprocessorOptions: {
       scss: {
         loadPaths: [path.join(__dirname, "src/styles")],
-        silenceDeprecations: ["legacy-js-api", "mixed-decls"],
+        silenceDeprecations: ["legacy-js-api"],
+
+        additionalData: (content, src) => {
+          const fileName = path.basename(src);
+          const imp = "@use 'imports' as *;";
+
+          return (/\.module\.scss$/.test(fileName) ? imp : "") + content;
+        },
       },
     },
   },

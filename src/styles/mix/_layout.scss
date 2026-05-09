@@ -15,7 +15,7 @@
   }
 
   @if $type == "y" {
-    #{cpy}: center;
+    #{$cpy}: center;
   }
 
   @if $type == "xy" {

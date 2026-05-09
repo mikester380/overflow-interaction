@@ -1,0 +1,19 @@
+.button {
+  background-color: $white;
+  border: none;
+  height: 3.4rem;
+  border-radius: 9999px;
+  line-height: 1;
+
+  &[data-type="text"] {
+    @include cwf("y");
+    padding: 10px 14px;
+    font-weight: 500;
+    font-size: 1.4rem;
+  }
+
+  &[data-type="icon"] {
+    width: 3.4rem;
+    @include cwf("xy");
+  }
+}
